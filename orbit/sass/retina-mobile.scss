@@ -1,0 +1,7 @@
+// Media Query: retina mobile
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) { 
+
+	.sample { background-image: url(images/nav_color@2x.png); background-size: 17px; }
+
+}

@@ -1,0 +1,32 @@
+/*
+Theme Name: Jigsaw
+Description: Used to style the TinyMCE editor.
+*/
+html .mceContentBody { max-width: 584px; }
+body { color: #484848; background-color: #f9f9f9; font: 100%/1.5 sans-serif; }
+h4 { font: 24px/1.5 sans-serif; }
+p { font: 100%/1.5 sans-serif; margin-bottom: 15px; }
+ul, ol { margin: 1em 0 1em 2em; padding: 0; }
+ul { list-style: square; }
+li { pudding: .25em 0; }
+ol { list-style-type: decimal; }
+ol ol { list-style: upper-alpha; }
+ol ol ol { list-style: lower-roman; }
+ol ol ol ol { list-style: lower-alpha; }
+ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+strong { font-style: inherit; font-weight: bold; }
+em, i { font-style: italic; font-weight: inherit; line-height: inherit; }
+.mceContentBody blockquote { margin: 1em 0 1em 2em; }
+.mceContentBody blockquote, .mceContentBody blockquote p { font-style: italic !important; margin: 0 1.15em 0 1em; }
+a, a:visited {  }
+a:hover, a:active { outline: none; }
+.alignleft { display: inline; float: left; margin-right: 1.625em; }
+.alignright { display: inline; float: right; margin-left: 1.625em; }
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+img[class*="wp-image-"] { height: auto; max-width: 100%; }
+img.size-full { width: auto; }
+p img, .wp-caption { max-width: 100%; margin: 0 auto 5%; border: none; }
+.wp-caption img, .wp-caption a img { display: block; max-width: 100%; }
+.wp-caption a { border: none; }
+.wp-caption-text { color: #cdcdcd; font-style: italic; position: relative; }
+img { display: block; }

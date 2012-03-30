@@ -1,0 +1,152 @@
+// mixins.scss - snippets of reusable CSS to develop faster and keep code readable
+
+// Font Stacks ------------------------------ +
+
+@mixin sans-font($weight: 400, $style: normal, $size: font-em(22px), $lineHeight: 1.5) {
+	font: $weight $style #{$size}/#{$lineHeight} sans-serif;
+}
+@mixin serif-font($weight: 400, $style: normal, $size: font-em(16px), $lineHeight: 1.5) {
+	font: $weight $style #{$size}/#{$lineHeight} serif;
+}
+
+// CSS3 Goodness with browser stack --------- +
+
+// Opacity
+
+@mixin opacity($opacity: 100) {
+	filter: alpha(opacity=$opacity);
+    opacity: $opacity / 100;
+}
+
+// Borderradius
+
+@mixin rounded($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius; 
+}
+
+@mixin bordered($top-color, $right-color, $bottom-color, $left-color) {
+	border-top: solid 1px $top-color;
+	border-left: solid 1px $left-color;
+	border-right: solid 1px $right-color;
+	border-bottom: solid 1px $bottom-color; 
+}
+
+@mixin border-radius($topright, $bottomright, $bottomleft, $topleft) {
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	border-top-left-radius: $topleft; 
+}
+
+// Boxshadow
+
+@mixin drop-shadow($x-axis, $y-axis, $blur, $alpha) {
+	-webkit-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha);
+	box-shadow: $x-axis $y-axis $blur rgba(0, 0, 0, $alpha); 
+}
+
+@mixin inset-shadow($horizontal, $vertical, $blur, $alpha) {
+	-webkit-box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha);
+	-moz-box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha);
+	box-shadow: inset $horizontal $vertical $blur rgba(0, 0, 0, $alpha); 
+}
+
+@mixin box-shadow($arguments) {
+	-webkit-box-shadow: $arguments;
+	-moz-box-shadow: $arguments;
+	box-shadow: $arguments; 
+}
+
+// Csscolumns
+
+@mixin columns($colwidth, $colcount, $colgap, $columnRuleColor, $columnRuleStyle, $columnRuleWidth) {
+	-webkit-column-width: $colwidth;
+	-webkit-column-count: $colcount;
+	-webkit-column-gap: $colgap;
+	-webkit-column-rule-color: $columnRuleColor;
+	-webkit-column-rule-style: $columnRuleStyle;
+	-webkit-column-rule-width: $columnRuleWidth;
+	-moz-column-width: $colwidth;
+	-moz-column-count: $colcount;
+	-moz-column-gap: $colgap;
+	-moz-column-rule-color: $columnRuleColor;
+	-moz-column-rule-style: $columnRuleStyle;
+	-moz-column-rule-width: $columnRuleWidth;
+	column-width: $colwidth;
+	column-count: $colcount;
+	column-gap: $colgap;
+	column-rule-color: $columnRuleColor;
+	column-rule-style: $columnRuleStyle;
+	column-rule-width: $columnRuleWidth; 
+}
+
+// Cssgradients
+
+@mixin grad-bw($color, $start, $stop) {
+	background: $color;
+	background: -webkit-gradient(linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb($start,$start,$start)),
+	color-stop(1, rgb($stop,$stop,$stop)));
+	background: -moz-linear-gradient(center bottom,
+	rgb($start,$start,$start) 0%,
+	rgb($stop,$stop,$stop) 100%); 
+}
+
+@mixin grad-col($color, $start, $stop) {
+	background: $color;
+	background: -webkit-gradient(linear,
+	left bottom,
+	left top,
+	$start,
+	$stop);
+	background: -moz-linear-gradient(center bottom,
+	$start 0%,
+	$stop 100%); 
+}
+
+// Csstransforms
+
+@mixin rotate($deg){ 
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	transform: rotate($deg); 
+}
+
+@mixin scale($ratio){
+	-webkit-transform: scale($ratio);
+	-moz-transform: scale($ratio);
+	transform: scale($ratio); 
+}
+
+@mixin translate($transformX, $transformY) {
+	-webkit-transform: translate($transformX, $transformY);
+	-moz-transform: translate($transformX, $transformY);
+	transform: translate($transformX, $transformY); 
+}
+
+// Csstransitions
+
+@mixin transition-duration($duration: .2s) {
+	-moz-transition-duration: $duration;
+	-webkit-transition-duration: $duration;
+	transition-duration: $duration; 
+}
+
+@mixin transition($duration: .2s, $ease: ease-out) {
+	-webkit-transition: all $duration $ease;
+	-moz-transition: all $duration $ease;
+	transition: all $duration $ease; 
+}

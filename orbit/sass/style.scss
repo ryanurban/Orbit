@@ -1,0 +1,167 @@
+/*
+Theme Name: Jigsaw
+Theme URI: http://your-url-here
+Author: Ryan Urban / Fringe Development
+Author URI: http://fringewebdevelopment.com
+Description:The Jigsaw WordPress framework
+Version: 1.0
+License: The Unlicense
+*/
+
+// Core ------------------------------- +
+@import "variables.scss";
+@import "mixins.scss";
+@import "functions.scss";
+
+// HTML5 display definitions ---------- +
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+// Font-face -------------------------- +
+@import "fontface.scss";
+
+// Base ------------------------------- +
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: #f9f9f9; }
+html, button, input, select, textarea { font-family: sans-serif; color: $black; }
+body { margin: 0 auto; font-size: 1em; line-height: 1.4; min-width: 240px; text-align: center; }
+.ie8 body { min-width: 960px; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+// Links ------------------------------ +
+a {
+  color: $linkColor;
+  text-decoration: none;
+  &:visited { color: $linkColor; }
+  &:hover { color: $linkColorHover; }
+  &:focus { outline: thin dotted; }
+  &:active { outline: 0; }
+}
+
+// Headings --------------------------- +
+h1 { font: normal font-size(40)/1.5 sans-serif; }
+h2 { font: normal font-size(28)/1.5 sans-serif; }
+h3 { font: normal font-size(24)/1.5 sans-serif; }
+h4 { font: normal font-size(21)/1.5 sans-serif; }
+h5 { font: normal font-size(18)/1.5 sans-serif; }
+h6 { font: normal font-size(16)/1.5 sans-serif; }
+
+// Typography ------------------------- +
+p { font: 100%/1.5 sans-serif; margin-bottom: 1.5em; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+blockquote p { color: gray; font-style: italic; margin: 0 1.15em 0 1em; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+em { font-style: italic; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+// Lists ------------------------------ +
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+// Embedded content ------------------- +
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width: 100%; }
+.ie-dead img, .iem7 img { -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+/* WordPress styles / Make WordPress content responsive */
+.alignleft { display: inline; float: left; margin-right: 1.625em; }
+.alignright { display: inline; float: right; margin-left: 1.625em; }
+.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+img[class*="align"], img[class*="wp-image-"] { height: auto; }
+img.size-full, img.size-large { max-width: 97.5%; width: auto; height: auto; }
+img.alignleft, img.alignright, img.aligncenter { display: block; margin-bottom: 1.625em; }
+p img, .wp-caption { margin-top: 0.4em; }
+.wp-caption { height: 100%; max-width: 96%; margin: 3% auto; }
+.wp-caption img { display: block; max-width: 100%; }
+.wp-caption a { border: none; }
+.wp-caption a img { display: block; max-width: 100%; }
+.wp-caption .wp-caption-text { color: #666; font-style: italic; position: relative; }
+img[class*="align"], img[class*="wp-image-"], .wp-caption img { border-color: #eee; }
+
+// Figures ---------------------------- +
+figure { margin: 0; }
+
+// Tables ----------------------------- +
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+// Forms ------------------------------ +
+@import "forms.scss";
+
+// Header & Navigation ---------------- +
+@import "header.scss";
+
+// Footer ----------------------------- +
+@import "footer.scss";
+
+// jQuery Bits (tabs, accordion, etc) - +
+@import "jquery.scss";
+
+// Modernizr -------------------------- +
+@import "modernizr.scss";
+
+// Template Specifics ----------------- +
+
+   
+// Non-semantic Helper Classes -------- +
+
+// For image replacement
+.ir { border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden { display: none !important; visibility: hidden; }
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+// Hide visually and from screenreaders, but maintain layout
+.invisible { visibility: hidden; }
+
+// Contain floats: h5bp.com/q
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+// Media Queries ---------------------- +
+
+// Media Query: 480px
+@import "480.scss";
+
+// Media Query: 600px
+@import "600.scss";
+
+// Media Query: 768px
+@import "768.scss";
+
+// Media Query: 992px
+@import "992.scss";
+
+// Media Query: 1382px
+@import "1382.scss";
+
+// Media Query: retina mobile
+@import "retina-mobile.scss";
+
+// Media Query: retina tablet
+@import "retina-tablet.scss";
+
+// Media Query: print
+@import "print.scss";
