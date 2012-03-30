@@ -1,10 +1,12 @@
-# Jigsaw Framework
+# Orbit Framework
 
 **Version**: 1.0
 
-A starting point and framework used by me (aka Fringe Development) with a focus on creating customized WordPress themes. Jigsaw is built to help in putting together solid, responsive, websites with an emphasis on building bespoke WordPress themes (or a static site if you want), utilizing all my favorite other frameworks. 
+Orbit is a web development framework to assist you in getting your WordPress (or a static) site setup, configured, and into orbit quickly so you can focus your development time on building your project.
 
-Jigsaw has been put together to save me development time implementing my current, favorite approach towards building sites.
+Orbit is a framework with a focus on creating customized WordPress sites, quickly, and is also built to help in putting together solid, responsive, sites utilizing all my favorite frameworks. 
+
+Orbit has been put together to save me development time implementing my current, favorite approach towards building sites.
 
 This framework contains various bits shared from the best developers and frameworks around the web including: 
 
@@ -21,11 +23,11 @@ This framework contains various bits shared from the best developers and framewo
 
 ## Get started
 
-Clone the git repo - `git clone git://github.com/ryanurban/Jigsaw.git` - or [download it](https://github.com/ryanurban/Jigsaw/zipball/master)
+Clone the git repo - `git clone git://github.com/ryanurban/orbit.git` - or [download it](https://github.com/ryanurban/orbit/zipball/master)
 
 ## Links
-* [Github project page](https://github.com/ryanurban/Jigsaw)
-* [Documentation (GitHub wiki)](https://github.com/ryanurban/Jigsaw/wiki)
+* [Github project page](https://github.com/ryanurban/orbit)
+* [Documentation (GitHub wiki)](https://github.com/ryanurban/orbit/wiki)
 
 ## Contributing
 

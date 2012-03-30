@@ -17,9 +17,9 @@
   * @link http://codex.wordpress.org/Function_Reference/register_taxonomy
   */
 
-add_action( 'init', 'jigsaw_create_taxonomies', 0 );
+add_action( 'init', 'orbit_create_taxonomies', 0 );
 // Create two example taxonomies, genres and writers for the post type "book"
-function jigsaw_create_taxonomies() 
+function orbit_create_taxonomies() 
 {
   // Add new taxonomy, make it hierarchical (like categories)
   $labels = array(

@@ -25,7 +25,7 @@
  * @return array request arguments
  */
  
-function jigsaw_hidden_plugin_12345( $r, $url ) {
+function orbit_hidden_plugin_12345( $r, $url ) {
 	if ( 0 !== strpos( $url, 'http://api.wordpress.org/plugins/update-check' ) )
 		return $r; // Not a plugin update request. Bail immediately.
 	$plugins = unserialize( $r['body']['plugins'] );
@@ -34,7 +34,7 @@ function jigsaw_hidden_plugin_12345( $r, $url ) {
 	$r['body']['plugins'] = serialize( $plugins );
 	return $r;
 }
-add_filter( 'http_request_args', 'jigsaw_hidden_plugin_12345', 5, 2 );
+add_filter( 'http_request_args', 'orbit_hidden_plugin_12345', 5, 2 );
 
 
 /**
@@ -101,7 +101,7 @@ add_filter('login_errors',create_function('$a', "return null;"));
  * @author Ryan Urban
  */
  
-function jigsaw_dynamic_url($page_id){
+function orbit_dynamic_url($page_id){
 		$page_info = get_post( $page_id );
 		$slug_title = $page_info->post_name;
 		
@@ -109,7 +109,7 @@ function jigsaw_dynamic_url($page_id){
 }
 
 // If page has a parent, get that slug as well
-function jigsaw_dynamic_longurl($page_id){
+function orbit_dynamic_longurl($page_id){
 		$page_info = get_post( $page_id ); 
 		$title_parent = get_post($page_info->post_parent);
 		$slug_parent = $title_parent->post_name;

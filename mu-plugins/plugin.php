@@ -16,42 +16,42 @@
  */
 
 // Plugin Directory 
-define( 'JIGSAW_DIR', dirname( __FILE__ ) );
+define( 'ORBIT_DIR', dirname( __FILE__ ) );
 
-add_action( 'after_setup_theme', 'jigsaw_plugin_setup' );
-function jigsaw_plugin_setup() {
+add_action( 'after_setup_theme', 'ORBIT_plugin_setup' );
+function ORBIT_plugin_setup() {
 
 	// General
-	//include_once( JIGSAW_DIR . '/lib/functions/general.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/general.php' );
 
 	// Admin Area
-	//include_once( JIGSAW_DIR . '/lib/functions/admin-area.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/admin-area.php' );
 
 	// Admin Helper
-	//include_once( JIGSAW_DIR . '/lib/functions/admin-helper.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/admin-helper.php' );
 
 	// Admin Columns
-	//include_once( JIGSAW_DIR . '/lib/functions/admin-columns.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/admin-columns.php' );
  
 	// Post Types
-	//include_once( JIGSAW_DIR . '/lib/functions/post-types.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/post-types.php' );
 
 	// Taxonomies 
-	//include_once( JIGSAW_DIR . '/lib/functions/taxonomies.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/taxonomies.php' );
 
 	// Metaboxes
-	//include_once( JIGSAW_DIR . '/lib/functions/metaboxes.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/metaboxes.php' );
 
 	// Post Content
-	//include_once( JIGSAW_DIR . '/lib/functions/post-content.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/post-content.php' );
 
 	// Post Creation
-	//include_once( JIGSAW_DIR . '/lib/functions/post-creation.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/post-creation.php' );
 
 	// Custom Comments
-	//include_once( JIGSAW_DIR . '/lib/functions/custom-comments.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/custom-comments.php' );
 
 	// Custom Scripts
-	//include_once( JIGSAW_DIR . '/lib/functions/custom-scripts.php' );
+	//include_once( ORBIT_DIR . '/lib/functions/custom-scripts.php' );
 
 }

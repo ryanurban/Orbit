@@ -19,8 +19,8 @@
   * Create Custom Columns (exaxmple for showing the Title, Excerpt & Date for a CPT)
   */
 
-add_filter( 'manage_edit-excpt1_columns', 'jigsaw_edit_excpt1_columns' ) ;
-function jigsaw_edit_excpt1_columns( $columns ) {
+add_filter( 'manage_edit-excpt1_columns', 'orbit_edit_excpt1_columns' ) ;
+function orbit_edit_excpt1_columns( $columns ) {
 	$columns = array(
   		'cb' => '<input type="checkbox" />',
   		'title' => __( 'Example Title' ),
@@ -31,8 +31,8 @@ function jigsaw_edit_excpt1_columns( $columns ) {
   	return $columns;
 }
 
-add_action( 'manage_excpt1_posts_custom_column', 'jigsaw_manage_excpt1_columns', 10, 2 );
-function jigsaw_manage_excpt1_columns( $column, $post_id ) {
+add_action( 'manage_excpt1_posts_custom_column', 'orbit_manage_excpt1_columns', 10, 2 );
+function orbit_manage_excpt1_columns( $column, $post_id ) {
   	global $post;
 	switch( $column ) {
 		case 'caption' :
@@ -61,8 +61,8 @@ function jigsaw_manage_excpt1_columns( $column, $post_id ) {
   * Create Custom Columns (example for showing the Title, Taxonomy & Date for a CPT)
   */
   
-add_filter( 'manage_edit-excpt2_columns', 'jigsaw_edit_excpt2_columns' ) ;
-function jigsaw_edit_excpt2_columns( $columns ) {
+add_filter( 'manage_edit-excpt2_columns', 'orbit_edit_excpt2_columns' ) ;
+function orbit_edit_excpt2_columns( $columns ) {
 	$columns = array(
   		'cb' => '<input type="checkbox" />',
   		'title' => __( 'Example Title' ),
@@ -73,8 +73,8 @@ function jigsaw_edit_excpt2_columns( $columns ) {
   	return $columns;
 }
 
-add_action( 'manage_excpt2_posts_custom_column', 'jigsaw_manage_excpt2_columns', 10, 2 );
-function jigsaw_manage_excpt2_columns( $column, $post_id ) {
+add_action( 'manage_excpt2_posts_custom_column', 'orbit_manage_excpt2_columns', 10, 2 );
+function orbit_manage_excpt2_columns( $column, $post_id ) {
   	global $post;
 	switch( $column ) {
 		
@@ -114,20 +114,20 @@ function jigsaw_manage_excpt2_columns( $column, $post_id ) {
   	}
 }
 
-add_filter( 'manage_edit-excpt2_sortable_columns', 'jigsaw_excpt2_sortable_columns' );
-function jigsaw_excpt2_sortable_columns( $columns ) {
+add_filter( 'manage_edit-excpt2_sortable_columns', 'orbit_excpt2_sortable_columns' );
+function orbit_excpt2_sortable_columns( $columns ) {
 	$columns['type'] = 'type';
   	return $columns;
 }
 
 // Only run our customization on the 'edit.php' page in the admin
-add_action( 'load-edit.php', 'jigsaw_edit_excpt2_load' );
-function jigsaw_edit_excpt2_load() {
-  	add_filter( 'request', 'jigsaw_sort_excpt2' );
+add_action( 'load-edit.php', 'orbit_edit_excpt2_load' );
+function orbit_edit_excpt2_load() {
+  	add_filter( 'request', 'orbit_sort_excpt2' );
 }
 
 // Sorts the excpt2 types
-function jigsaw_sort_excpt2( $vars ) {
+function orbit_sort_excpt2( $vars ) {
 
   	// Check if we're viewing the 'excpt2' post type
   	if ( isset( $vars['post_type'] ) && 'media' == $vars['post_type'] ) {

@@ -12,7 +12,7 @@
  * @link         https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
  */
  
-add_filter( 'cmb_meta_boxes' , 'jigsaw_init_metaboxes' );
+add_filter( 'cmb_meta_boxes' , 'orbit_init_metaboxes' );
 /**
  * Create Metaboxes
  * @param  array $meta_boxes
@@ -21,8 +21,8 @@ add_filter( 'cmb_meta_boxes' , 'jigsaw_init_metaboxes' );
  * @link http://www.billerickson.net/wordpress-metaboxes/
  */
 
-$prefix = '_jigsaw_'; // Prefix for all fields
-function jigsaw_init_metaboxes( $meta_boxes ) {
+$prefix = '_orbit_'; // Prefix for all fields
+function orbit_init_metaboxes( $meta_boxes ) {
 	
 	global $prefix;
 	$meta_boxes[] = array(
@@ -53,9 +53,9 @@ function jigsaw_init_metaboxes( $meta_boxes ) {
  *
  */
   
-function jigsaw_initialize_cmb_meta_boxes() {
+function orbit_initialize_cmb_meta_boxes() {
     if ( !class_exists( 'cmb_Meta_Box' ) ) {
-        require_once( JIGSAW_DIR . '/lib/metabox/init.php' );
+        require_once( ORBIT_DIR . '/lib/metabox/init.php' );
     }
 }
-add_action( 'init', 'jigsaw_initialize_cmb_meta_boxes', 9999 );
+add_action( 'init', 'orbit_initialize_cmb_meta_boxes', 9999 );

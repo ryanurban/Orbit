@@ -16,8 +16,8 @@
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
-add_action( 'init', 'jigsaw_cpt_init' );
-function jigsaw_cpt_init() {
+add_action( 'init', 'orbit_cpt_init' );
+function orbit_cpt_init() {
   
   // Book CPT  
   $labels = array(
@@ -54,8 +54,8 @@ function jigsaw_cpt_init() {
 }
 
 // Display contextual help for CPT
-add_action( 'contextual_help', 'jigsaw_cpt_help_text', 10, 3 );
-function jigsaw_cpt_help_text( $contextual_help, $screen_id, $screen ) { 
+add_action( 'contextual_help', 'orbit_cpt_help_text', 10, 3 );
+function orbit_cpt_help_text( $contextual_help, $screen_id, $screen ) { 
   // $contextual_help .= var_dump( $screen ); // use this to help determine $screen->id
   if ( 'book' == $screen->id ) {
     $contextual_help =

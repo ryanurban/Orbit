@@ -105,10 +105,10 @@ define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
 define('WP_SITEURL', 'http://'.$_SERVER['SERVER_NAME']);
 
 /** Define template path & stylesheet path & setup some custom ones */
-define('TEMPLATEPATH', '/wp-content/themes/jigsaw');
-define('STYLESHEETPATH', '/wp-content/themes/jigsaw');
-define('JIGSAW_TEMPLATEPATH', '/wp-content/themes/jigsaw/');
-define('JIGSAW_STYLESHEETPATH', '/wp-content/themes/jigsaw/style.css');
+define('TEMPLATEPATH', '/wp-content/themes/orbit');
+define('STYLESHEETPATH', '/wp-content/themes/orbit');
+define('ORBIT_TEMPLATEPATH', '/wp-content/themes/orbit/');
+define('ORBIT_STYLESHEETPATH', '/wp-content/themes/orbit/style.css');
 
 /** Decrease AutoSave Interval */
 define('AUTOSAVE_INTERVAL', 120 );  // 120 seconds

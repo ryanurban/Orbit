@@ -10,8 +10,8 @@
  *	 http://frn.gd/GVnGLt (Automating WordPress Customization)
  *
  * @package WordPress
- * @subpackage Jigsaw
- * @since Jigsaw 1.0
+ * @subpackage Orbit
+ * @since Orbit 1.0
  *
  * @author		Ryan Urban <ryan@fringewebdevelopment.com>
  * @copyright	Copyright (c) Ryan Urban & Fringe Development
@@ -38,7 +38,7 @@ function wp_install_defaults($user_id) {
 	
 	
 	// Make our theme the default one
-	switch_theme('Jigsaw', 'Jigsaw');
+	switch_theme('orbit', 'orbit');
 	
 	
 	// Remove Hello Dolly and Akismet plugins

@@ -3,8 +3,8 @@
  * Page - Used as the main, default page template for this theme
  *
  * @package WordPress
- * @subpackage Jigsaw
- * @since Jigsaw 1.0
+ * @subpackage Orbit
+ * @since Orbit 1.0
  */
 
 get_header(); ?>

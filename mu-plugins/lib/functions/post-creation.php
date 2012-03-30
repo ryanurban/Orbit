@@ -20,7 +20,7 @@
  * @link http://codex.wordpress.org/TinyMCE
  */
  
-function jigsaw_formatTinyMCE($arg) {
+function orbit_formatTinyMCE($arg) {
 	global $current_screen;
  	switch ($current_screen->post_type) {
 		// Default options for editor, simply change / add a case for 'page', 'post', or 'CPT'
@@ -33,7 +33,7 @@ function jigsaw_formatTinyMCE($arg) {
 	}
 	return $arg;
 }
-add_filter('tiny_mce_before_init', 'jigsaw_formatTinyMCE' );
+add_filter('tiny_mce_before_init', 'orbit_formatTinyMCE' );
 
 
 /**
@@ -43,8 +43,8 @@ add_filter('tiny_mce_before_init', 'jigsaw_formatTinyMCE' );
  * you know it'll be messed with :)
  */
  
-add_action('admin_head', 'jigsaw_removemediabuttons');
-function jigsaw_removemediabuttons() {
+add_action('admin_head', 'orbit_removemediabuttons');
+function orbit_removemediabuttons() {
 	global $post;
 	if($post->post_type == 'cpt-here')	{
 		remove_action( 'media_buttons', 'media_buttons' );
@@ -59,8 +59,8 @@ function jigsaw_removemediabuttons() {
  * @link http://www.billerickson.net/twentyten-crm/
  */
 
-add_action( 'gettext', 'jigsaw_change_title_text' );
-function jigsaw_change_title_text( $translation ) {
+add_action( 'gettext', 'orbit_change_title_text' );
+function orbit_change_title_text( $translation ) {
 	global $post;
 	if( isset( $post ) ) {
 		switch( $post->post_type ){
@@ -77,8 +77,8 @@ function jigsaw_change_title_text( $translation ) {
  * Change post editor text
  */
 
-add_filter( 'default_content', 'jigsaw_editor_content' );
-function jigsaw_editor_content( $content ) {
+add_filter( 'default_content', 'orbit_editor_content' );
+function orbit_editor_content( $content ) {
     global $post_type;
     switch( $post_type ) {
         case 'cpt-here':

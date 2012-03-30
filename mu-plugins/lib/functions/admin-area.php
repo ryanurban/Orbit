@@ -22,8 +22,8 @@
  * @link http://wp.tutsplus.com/tutorials/creative-coding/customizing-your-wordpress-admin/
  */
 
-add_action('admin_menu', 'jigsaw_remove_menus');
-function jigsaw_remove_menus () {
+add_action('admin_menu', 'orbit_remove_menus');
+function orbit_remove_menus () {
 	// remove_menu_page('edit.php'); // Posts
 	// remove_menu_page('upload.php'); // Media
 	// remove_menu_page('link-manager.php'); // Links
@@ -46,7 +46,7 @@ function jigsaw_remove_menus () {
  * @link http://wp.tutsplus.com/tutorials/creative-coding/customizing-your-wordpress-admin/
  */
 
-function jigsaw_custom_menu_order( $menu_ord ) {
+function orbit_custom_menu_order( $menu_ord ) {
 	if ( !$menu_ord ) return true;
 	return array(
 		'index.php', // this represents the dashboard link
@@ -56,16 +56,16 @@ function jigsaw_custom_menu_order( $menu_ord ) {
 		'upload.php', // the media manager
     );
 }
-add_filter( 'custom_menu_order', 'jigsaw_custom_menu_order' );
-add_filter( 'menu_order', 'jigsaw_custom_menu_order' );
+add_filter( 'custom_menu_order', 'orbit_custom_menu_order' );
+add_filter( 'menu_order', 'orbit_custom_menu_order' );
 
 
 /**
  * Add Custom Post Types to the Dashboard
  */
 
-add_action( 'right_now_content_table_end' , 'jigsaw_right_now_content_table_end' );
-function jigsaw_right_now_content_table_end() {
+add_action( 'right_now_content_table_end' , 'orbit_right_now_content_table_end' );
+function orbit_right_now_content_table_end() {
   $args = array(
     'public' => true ,
     '_builtin' => false
@@ -95,8 +95,8 @@ function jigsaw_right_now_content_table_end() {
  * @link http://codex.wordpress.org/Dashboard_Widgets_API
  */
 
-add_action('wp_dashboard_setup', 'jigsaw_remove_dashboard_widgets' );
-function jigsaw_remove_dashboard_widgets() {	
+add_action('wp_dashboard_setup', 'orbit_remove_dashboard_widgets' );
+function orbit_remove_dashboard_widgets() {	
 	// Main Column Widgets
 		// remove_meta_box( 'dashboard_browser_nag', 'dashboard', 'normal' );
 		// remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );

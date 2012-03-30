@@ -29,58 +29,58 @@
  * @link http://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length
  */
  
-function jigsaw_excerpt_length( $length ) {
+function orbit_excerpt_length( $length ) {
 	return 30;
 }
-add_filter( 'excerpt_length', 'jigsaw_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'orbit_excerpt_length', 999 );
 
 
 /**
  * Returns a "Continue Reading" link for excerpts
  */
  
-function jigsaw_continue_reading_link() {
+function orbit_continue_reading_link() {
 	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
 }
 
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and 
- * jigsaw_continue_reading_link()
+ * orbit_continue_reading_link()
  */
  
-function jigsaw_auto_excerpt_more( $more ) {
+function orbit_auto_excerpt_more( $more ) {
 	return '&hellip;';
 }
-add_filter( 'excerpt_more', 'jigsaw_auto_excerpt_more' );
+add_filter( 'excerpt_more', 'orbit_auto_excerpt_more' );
 
 
 /**
  * Adds a pretty "Continue Reading" link to custom post excerpts.
  */
  
-function jigsaw_custom_excerpt_more( $output ) {
+function orbit_custom_excerpt_more( $output ) {
 	if ( has_excerpt() && ! is_attachment() ) {
-		$output .= jigsaw_continue_reading_link();
+		$output .= orbit_continue_reading_link();
 	}
 	return $output;
 }
-add_filter( 'get_the_excerpt', 'jigsaw_custom_excerpt_more' );
+add_filter( 'get_the_excerpt', 'orbit_custom_excerpt_more' );
 
 
 /**
  * Display navigation to next/previous pages when applicable
  */
 
-if ( ! function_exists( 'jigsaw_content_nav' ) ) :
-function jigsaw_content_nav( $nav_id ) {
+if ( ! function_exists( 'orbit_content_nav' ) ) :
+function orbit_content_nav( $nav_id ) {
 	global $wp_query;
 
 	if ( $wp_query->max_num_pages > 1 ) : ?>
 		<nav id="<?php echo $nav_id; ?>">
 			<ul>
-			<li><?php next_posts_link( __( '<span>&larr;</span> Older Posts', 'jigsaw' ) ); ?></li>
-			<li><?php previous_posts_link( __( 'Newer Posts <span>&rarr;</span>', 'jigsaw' ) ); ?></li>
+			<li><?php next_posts_link( __( '<span>&larr;</span> Older Posts', 'orbit' ) ); ?></li>
+			<li><?php previous_posts_link( __( 'Newer Posts <span>&rarr;</span>', 'orbit' ) ); ?></li>
 			</ul>
 		</nav><!-- end archive-nav -->		
 	<?php endif;

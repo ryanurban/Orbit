@@ -3,8 +3,8 @@
  * The template used for displaying page content in page.php
  *
  * @package WordPress
- * @subpackage Jigsaw
- * @since Jigsaw 1.0
+ * @subpackage Orbit
+ * @since Orbit 1.0
  */
 ?>
 	<?php the_title(); ?>	

@@ -1,9 +1,9 @@
-function jigsawDev(){
+function orbitDev(){
 	miscRun();
 }
 
 jQuery(document).ready(function($) {
-	jigsawDev();
+	orbitDev();
 });
 
 /*-------------------------------------------    
