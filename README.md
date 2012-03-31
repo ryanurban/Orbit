@@ -15,7 +15,7 @@ This framework contains various bits shared from the best developers and framewo
 * [320 and Up](http://frn.gd/ywAwhQ)
 * [Roots](http://www.rootstheme.com/)
 
-**Built by:**:
+**Built by:**
 
 * Ryan Urban ( [@fringewebdev](http://twitter.com/fringewebdev) / [fringewebdevelopment.com](http://fringewebdevelopment.com/) )
 
