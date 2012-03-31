@@ -12,6 +12,15 @@ What follows is a list of plugins I'll typically turn to for my WordPress themes
   This one adds some extra security for your WordPress site.
 * [Login Lockdown](http://wordpress.org/extend/plugins/login-lockdown/)
   Should be pretty self-explanatory. Adds additional security for the WordPress login form.
+  
+## About to start using and recommend
+
+* [WP Super Cache](http://wordpress.org/extend/plugins/wp-super-cache/)
+  This plugin generates static html files from your dynamic WordPress blog. After a html file is generated your webserver will serve that file instead of processing the comparatively heavier and more expensive WordPress PHP scripts.
+* [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/)
+  W3 Total Cache improves the user experience of your site by improving your server performance, caching every aspect of your site, reducing the download times and providing transparent content delivery network (CDN) integration.
+  
+ _These are probably the two most well known optimization plugins for WordPress. I recommend you do your own research regarding them, as the efficacy of them at times can come down to your setup and other factors._
 
 ## Other plugins I use depending on the project
 
@@ -21,6 +30,8 @@ What follows is a list of plugins I'll typically turn to for my WordPress themes
   I recently used this on a client's project and liked it. Mainly I liked that it seemed simple and straightforward and backed up not only your theme and plugins, but your database as well. It's hard to find a good, all-encompassing backup solution for WordPress. Of course you could go premium and spring for VaultPress (below).
 * [WP DB Manager](http://wordpress.org/extend/plugins/wp-dbmanager/)
   I've used this plugin off and on, but I've found it depends on your hosting company's setup on whether this plugin will be of use or not. If it does, this plugin is great because you can schedule automatic database optimization and backups. It is important to note that this plugin doesn't back up your theme files however.
+* [Posts 2 Posts](http://wordpress.org/extend/plugins/posts-to-posts/)
+  This is an amazing plugin when you'd like to create relationships between posts, pages, or custom posts and pages. For example, I've used this plugin in the past for shopping area site to relate and show various features and specials to the proper restaurant or shop–freakin awesome!
   
   *As an aside to all the backup information, I do always try to setup automatic backups for my clients, whether through using a plugin or creating a couple of cron jobs to do the trick (which also allows you to skip utilizing a plugin for that–the less plugins you use the better)*
 

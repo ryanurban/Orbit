@@ -2,7 +2,7 @@
 
 This contains all your site's core functionality so that it is theme independent.
 
-Currently the functionality tweaks in my files are commented out in my plugin.php file. You'll have to uncomment each line that you want to use, and be aware that all of the tweaks are not commented out, so you'll need to delete or comment out what you don't want to use.
+Currently the functionality tweaks in my files are commented out in my plugin.php file. You'll have to uncomment each line that you want to use, and be aware that all of the functions and changes are not commented out, so you'll need to delete or comment out what you don't want to use.
 
 *Based off of Bill Erickson's [Core Functionality Plugin](http://www.billerickson.net/core-functionality-plugin/)*
 

@@ -23,7 +23,7 @@ audio:not([controls]) { display: none; }
 @import "fontface.scss";
 
 // Base ------------------------------- +
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: #f9f9f9; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: #f9f9f9; }
 html, button, input, select, textarea { font-family: sans-serif; color: $black; }
 body { margin: 0 auto; font-size: 1em; line-height: 1.4; min-width: 240px; text-align: center; }
 .ie8 body { min-width: 960px; }

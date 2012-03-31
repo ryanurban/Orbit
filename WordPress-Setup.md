@@ -5,13 +5,24 @@
 * Download WordPress (pick your poison: from [WordPress](http://wordpress.org/), from [GitHub](https://github.com/WordPress/WordPress/zipball/master), or from your terminal)
 * Setup database locally or with your hosting company
 * [Install WordPress](http://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install)
-* Clean up & remove default content (posts, links, pages, etc)
+
+_At this point, are theme (orbit) should be activated and you shouldn't need to spend any time on cleaning up or setting options!_
+
+### Wait, what do I do with your framework files?
+
+* mu-plugins: goes in your wp-content folder
+* theme-test: contains plugins for final theme testing (read included readme)
+* orbit: is the actual WordPress theme, drop it in the Themes folder
+* wp-plugins: pick and choose what plugins you want from these and drop them in your wp-plugins folder
+* htaccess.txt: look for the .htaccess file in your server's root directory and add the bits from htaccess.txt to this file and save (you may need to set a View hidden files option to see the file)
+* wp-config.php: feel free to basically take the portion of snippets beginning with "Extra bits for
+  speed & optimization" and add them to your wp-config.php file
 
 ## Security
 
 Various tips for hardening WordPress taken from around the web and WordPress
 
-* Delete install.php file from wp-admin folder
+* Delete install.php file from wp-admin & wp-content folder
 * Change default database prefix in wp-config.php (so that it is not wp_) (do this during the install step)
 * Make sure wp-config.php has Authentication Keys / Salts
 * Add the extra optimization bits from wp-config.php included in framework
@@ -22,18 +33,8 @@ Various tips for hardening WordPress taken from around the web and WordPress
 ## Customize
 
 * Upload and choose plugins
-* Setup development files, mu-plugin, permalinks, settings, etc
-* Activate your new WordPress theme and get to work
-
-### Wait, what do I do with your framework files?
-
-* mu-plugins: goes in your wp-content folder
-* theme-test: contains plugins for final theme testing (read included readme)
-* work-bench: is the actual WordPress theme, drop it in the Themes folder
-* wp-plugins: pick and choose what plugins you want from these and drop them in your wp-plugins folder
-* htaccess.txt: put this in your servers root directory and then turn it into a .htaccess file
-* wp-config.php: feel free to basically take the portion of snippets beginning with "Extra bits for
-  speed & optimization" and add them to your wp-config.php file
+* Setup development files, mu-plugin functions, etc
+* Get to work
 
 ## Pre-Launch
 

@@ -4,6 +4,9 @@
  *
  * This file registers any custom metaboxes
  *
+ * For examples and documentation:
+ * @link https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress/wiki
+ *
  * @category	 Core Functionality
  * @package      Metaboxes
  * @author       Ryan Urban <ryan@fringewebdevelopment.com>

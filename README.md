@@ -15,11 +15,32 @@ This framework contains various bits shared from the best developers and framewo
 * [320 and Up](http://frn.gd/ywAwhQ)
 * [Roots](http://www.rootstheme.com/)
 
-**Cobbled together by:**:
+**Built by:**:
 
 * Ryan Urban ( [@fringewebdev](http://twitter.com/fringewebdev) / [fringewebdevelopment.com](http://fringewebdevelopment.com/) )
 
 ## Features
+
+* Built for sites wanting to utilize Responsive Web Design (has 5 default media queries, not including retina specific queries to serve those high-res images for mobile and tablet) 
+* Specifically current set up to be responsive in Firefox, IE9, Chrome, and Safari, fixed in IE8, and served a universal typography stylesheet for IE6/7 (_you can make the site responsive in IE6/7/8 by utilizing the respond.min.js script included_)
+* Use of Modernizr for progressive enhancement and no-js fallbacks
+* Use of Selectivizr (along with jQuery Extended Selectors) so you can use those juicy CSS3 selectors across browsers
+* Use of the Responsive Enhance script to help with serving the right sized image (think normal vs. retina)
+* Included a template for your startup screens and icons
+* Included the SASS files that I use including the mixing, variables, and functions
+* Base WordPress theme setup (with more to come)
+* A huge dose of functions to customize just about every aspect of WordPress that you would typically want for client projects
+* Custom install.php file to customize your WordPress install, saving you setup time (get rid of default content, set various options, make our theme active, and create a home page)
+* Custom functionality plugin to make your customizations theme agnostic
+* Use of the Custom Metaboxes and Fields for WordPress, which is simple to use and allows you to quickly create really nice looking custom areas for your users
+* Provide a theme-test file with instructions and plugins for testing your theme against the WordPress standard
+* Provide a customized wp-config.php template for better site optimization
+* Provide a htaccess file based on the Roots file (which is based on the HTML5 Boilerplate one) setup for WordPress, with the addition of the 5G Blacklist/Firewall for additional security
+* Provide a list of go-to plugins I typically use for my WordPress sites
+* Built to make WordPress more secure
+* Fairly complete documentation on the various files, functions, and how to use things
+* And last but not least, the majority of the benefits that you can read about on each framework's site (above)
+* See something you don't like, remove it
 
 ## Get started
 
@@ -39,7 +60,8 @@ Feel free to let me know what you think, suggest improvements, fixes, etc
 * Think about adding some documentation
 * Think about adding installation instructions
 * Add more extensive inline documentation
-* Add additional WordPress template files
+* Add additional WordPress template files (possibly what's required of a theme to be placed in the WordPress repository)
+* Add microformats as add proper templates
 * Create site for framework to show it in use
 
 ## Changelog
