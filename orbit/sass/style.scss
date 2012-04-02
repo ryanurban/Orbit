@@ -24,8 +24,8 @@ audio:not([controls]) { display: none; }
 
 // Base ------------------------------- +
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: #f9f9f9; }
-html, button, input, select, textarea { font-family: sans-serif; color: $black; }
-body { margin: 0 auto; font-size: 1em; line-height: 1.4; min-width: 240px; text-align: center; }
+html, button, input, select, textarea { color: $black; }
+body { margin: 0 auto; @include sans-serif(); min-width: 240px; text-align: center; }
 .ie8 body { min-width: 960px; }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -41,15 +41,15 @@ a {
 }
 
 // Headings --------------------------- +
-h1 { font: normal font-size(40)/1.5 sans-serif; }
-h2 { font: normal font-size(28)/1.5 sans-serif; }
-h3 { font: normal font-size(24)/1.5 sans-serif; }
-h4 { font: normal font-size(21)/1.5 sans-serif; }
-h5 { font: normal font-size(18)/1.5 sans-serif; }
-h6 { font: normal font-size(16)/1.5 sans-serif; }
+h1 { font: normal #{font-size(40)}/#{1.5} sans-serif; }
+h2 { font: normal #{font-size(28)}/#{1.5} sans-serif; }
+h3 { font: normal #{font-size(24)}/#{1.5} sans-serif; }
+h4 { font: normal #{font-size(21)}/#{1.5} sans-serif; }
+h5 { font: normal #{font-size(18)}/#{1.5} sans-serif; }
+h6 { font: normal #{font-size(16)}/#{1.5} sans-serif; }
 
 // Typography ------------------------- +
-p { font: 100%/1.5 sans-serif; margin-bottom: 1.5em; }
+p { @include sans-serif(); margin-bottom: 1.5em; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 blockquote { margin: 1em 40px; }

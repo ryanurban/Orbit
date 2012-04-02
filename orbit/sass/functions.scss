@@ -6,5 +6,5 @@ $font-base: 16px;
 
 // Font-size to em's Function
 @function font-size($target, $context: $font-base) {
-   @return $target + 0px / $context + 0em;
+   @return ($target + 0px) / $context + 0em;
 }

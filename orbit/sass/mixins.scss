@@ -2,10 +2,10 @@
 
 // Font Stacks ------------------------------ +
 
-@mixin sans-font($weight: 400, $style: normal, $size: font-em(22px), $lineHeight: 1.5) {
+@mixin sans-serif($weight: 400, $style: normal, $size: 100%, $lineHeight: 1.5) {
 	font: $weight $style #{$size}/#{$lineHeight} sans-serif;
 }
-@mixin serif-font($weight: 400, $style: normal, $size: font-em(16px), $lineHeight: 1.5) {
+@mixin serif($weight: 400, $style: normal, $size: 100%, $lineHeight: 1.5) {
 	font: $weight $style #{$size}/#{$lineHeight} serif;
 }
 
@@ -149,4 +149,13 @@
 	-webkit-transition: all $duration $ease;
 	-moz-transition: all $duration $ease;
 	transition: all $duration $ease; 
+}
+
+// Cssanimations
+
+@mixin animate($arguements) { 
+	-webkit-animation: $arguements;
+    -moz-animation:    $arguements;
+    -ms-animation:     $arguements;
+    animation:     	   $arguements;
 }

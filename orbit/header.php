@@ -34,7 +34,7 @@
 	<!-- JAVASCRIPT -->
 	<script src="<?php echo ORBIT_TEMPLATEPATH; ?>/js/libs/modernizr-2.5.3.min.js"></script>
 	
-	<!-- Home screen icon  Mathias Bynens mathiasbynens.be/notes/touch-icons -->
+	<!-- Home screen icons: mathiasbynens.be/notes/touch-icons -->
 	<!-- For iPad with high-resolution Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo ORBIT_TEMPLATEPATH; ?>/images/schwag/apple-touch-icon-144x144-precomposed.png" />
 	<!-- For iPhone with high-resolution Retina display: -->
