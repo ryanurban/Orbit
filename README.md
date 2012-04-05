@@ -28,7 +28,7 @@ This framework contains various bits shared from the best developers and framewo
 * Use of the Responsive Enhance script to help with serving the right sized image (think normal vs. retina)
 * Included a template for your startup screens and icons
 * Included the SASS files that I use including the mixing, variables, and functions
-* Base WordPress theme setup (with more to come)
+* Basic WordPress theme setup (with more to come), stripped down and clean
 * A huge dose of functions to customize just about every aspect of WordPress that you would typically want for client projects
 * Custom install.php file to customize your WordPress install, saving you setup time (get rid of default content, set various options, make our theme active, and create a home page)
 * Custom functionality plugin to make your customizations theme agnostic

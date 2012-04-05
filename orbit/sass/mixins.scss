@@ -139,16 +139,28 @@
 
 // Csstransitions
 
-@mixin transition-duration($duration: .2s) {
-	-moz-transition-duration: $duration;
-	-webkit-transition-duration: $duration;
-	transition-duration: $duration; 
-}
-
 @mixin transition($duration: .2s, $ease: ease-out) {
 	-webkit-transition: all $duration $ease;
 	-moz-transition: all $duration $ease;
+	-o-transition: all $duration $ease;
+	-ms-transition: all $duration $ease;
 	transition: all $duration $ease; 
+}
+
+@mixin transition-plain($property, $duration, $timing) {
+	-webkit-transition: $property $duration $timing;
+	-moz-transition: $property $duration $timing;
+	-o-transition: $property $duration $timing;
+	-ms-transition: $property $duration $timing;
+	transition: $property $duration $timing; 
+}
+
+@mixin transition-duration($duration: .2s) {
+	-moz-transition-duration: $duration;
+	-webkit-transition-duration: $duration;
+	-o-transition: $duration;
+	-ms-transition: $duration;
+	transition-duration: $duration; 
 }
 
 // Cssanimations
