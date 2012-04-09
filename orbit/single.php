@@ -1,6 +1,6 @@
 <?php
 /**
- * Page - The template for displaying all pages.
+ * Single - The Template for displaying all single posts.
  *
  * @package WordPress
  * @subpackage Orbit
@@ -9,11 +9,15 @@
 get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
+				
+		<?php orbit_content_nav( 'nav-above' ); ?>
 
-		<?php get_template_part( 'content', 'page' ); ?>
+		<?php get_template_part( 'content', 'single' ); ?>
+
+		<?php orbit_content_nav( 'nav-below' ); ?>
 
 		<?php comments_template( '', true ); ?>
 
 	<?php endwhile; ?>
-	
+
 <?php get_footer(); ?>

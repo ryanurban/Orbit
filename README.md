@@ -14,6 +14,8 @@ This framework contains various bits shared from the best developers and framewo
 * [HTML5 Boilerplate Mobile](http://html5boilerplate.com/mobile)
 * [320 and Up](http://frn.gd/ywAwhQ)
 * [Roots](http://www.rootstheme.com/)
+* [Toolbox](http://wordpress.org/extend/themes/toolbox)
+* [_S](https://github.com/Automattic/_s)
 
 **Built by:**
 
@@ -25,10 +27,9 @@ This framework contains various bits shared from the best developers and framewo
 * Specifically current set up to be responsive in Firefox, IE9, Chrome, and Safari, fixed in IE8, and served a universal typography stylesheet for IE6/7 (_you can make the site responsive in IE6/7/8 by utilizing the respond.min.js script included_)
 * Use of Modernizr for progressive enhancement and no-js fallbacks
 * Use of Selectivizr (along with jQuery Extended Selectors) so you can use those juicy CSS3 selectors across browsers
-* Use of the Responsive Enhance script to help with serving the right sized image (think normal vs. retina)
 * Included a template for your startup screens and icons
 * Included the SASS files that I use including the mixing, variables, and functions
-* Basic WordPress theme setup (with more to come), stripped down and clean
+* Basic WordPress theme setup (with more to come), stripped down and cleaned out
 * A huge dose of functions to customize just about every aspect of WordPress that you would typically want for client projects
 * Custom install.php file to customize your WordPress install, saving you setup time (get rid of default content, set various options, make our theme active, and create a home page)
 * Custom functionality plugin to make your customizations theme agnostic
@@ -56,13 +57,13 @@ Feel free to let me know what you think, suggest improvements, fixes, etc
 
 ## Upcoming
 
-* Think about implementing more of a responsive template with default media queries
 * Think about adding some documentation
 * Think about adding installation instructions
 * Add more extensive inline documentation
 * Add additional WordPress template files (possibly what's required of a theme to be placed in the WordPress repository)
 * Add microformats as add proper templates
 * Create site for framework to show it in use
+* Add translations?
 
 ## Changelog
 
@@ -80,6 +81,8 @@ Feel free to let me know what you think, suggest improvements, fixes, etc
 * Modernizr: MIT/BSD license
 * Normalize.css: Public Domain
 * WordPress: GPLv2
+* Toolbox: GPLv2
+* _S: GPLv2
 * Bill Erickson's Core Functionality Plugin: GPLv2
 * Custom Metaboxes and Fields for WordPress: GPLv2
 

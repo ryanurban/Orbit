@@ -12,7 +12,4 @@ jQuery(document).ready(function($) {
 function miscRun() {			
 	// iOS scale bug fix
 	MBP.scaleFix();
-	
-	// Responsive Image Enhance
-	responsiveEnhance(document.getElementById('demo'), 400);
 }

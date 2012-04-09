@@ -1,12 +1,11 @@
 <?php
 /**
- * 404 Page - Used as the 404 page for this theme
+ * 404 Page - The template for displaying 404 pages (Not Found).
  *
  * @package WordPress
  * @subpackage Orbit
  * @since Orbit 1.0
  */
-
 get_header(); ?>
 
 	<h2>There is the issue of the 404...</h2>
