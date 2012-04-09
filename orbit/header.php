@@ -68,7 +68,7 @@
 
 	<nav role="navigation">
 		<ol>
-		<li><a href="<?php // orbit_dynamic_url( 8 ); ?>">Page Link</a></li>
+		<li><a href="<?php //orbit_dynamic_url( 1 ); ?>">Home</a></li>
 		</ol>
 	</nav>
 </header>

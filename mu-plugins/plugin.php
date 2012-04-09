@@ -18,8 +18,8 @@
 // Plugin Directory 
 define( 'ORBIT_DIR', dirname( __FILE__ ) );
 
-add_action( 'after_setup_theme', 'ORBIT_plugin_setup' );
-function ORBIT_plugin_setup() {
+add_action( 'after_setup_theme', 'orbit_plugin_setup' );
+function orbit_plugin_setup() {
 
 	// General
 	//include_once( ORBIT_DIR . '/lib/functions/general.php' );

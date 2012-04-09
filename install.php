@@ -36,10 +36,11 @@ function wp_install_defaults($user_id) {
 	update_option( 'enable_app', 1 );
 	update_option( 'enable_xmlrpc', 1 );
 	
+	// Hide the Toolbar on the front-end
+	show_admin_bar(false);
 	
 	// Make our theme the default one
 	switch_theme('orbit', 'orbit');
-	
 	
 	// Remove Hello Dolly and Akismet plugins
 	require_once(ABSPATH . 'wp-admin/includes/plugin.php');
