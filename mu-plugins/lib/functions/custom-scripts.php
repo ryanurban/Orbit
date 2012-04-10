@@ -37,7 +37,4 @@ function orbit_scripts() {
     wp_register_script('orbit_script', ORBIT_TEMPLATEPATH . '/js/script.js', array('jquery'), null, true);
     wp_enqueue_script('orbit_script');
 	
-    // Responsive Enhance
-    wp_register_script('orbit_enhance', ORBIT_TEMPLATEPATH . '/js/libs/responsive-enhance.js', array('jquery'), null, true);
-    wp_enqueue_script('orbit_enhance');
 }

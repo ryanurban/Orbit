@@ -35,6 +35,8 @@ function wp_install_defaults($user_id) {
 	// Turned this on so you can create content from apps
 	update_option( 'enable_app', 1 );
 	update_option( 'enable_xmlrpc', 1 );
+	// Disable comments by default
+	update_option( 'default_comment_status', 'closed' );
 	
 	// Hide the Toolbar on the front-end
 	show_admin_bar(false);

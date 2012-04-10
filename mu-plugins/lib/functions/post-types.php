@@ -50,7 +50,7 @@ function orbit_cpt_init() {
     'menu_position' => null,
     'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
   ); 
-  // Register_post_type( 'book', $args );
+  register_post_type( 'book', $args );
 }
 
 // Display contextual help for CPT

@@ -21,6 +21,9 @@ define( 'ORBIT_DIR', dirname( __FILE__ ) );
 add_action( 'after_setup_theme', 'orbit_plugin_setup' );
 function orbit_plugin_setup() {
 
+	// Required 
+	include_once( ORBIT_DIR . '/lib/functions/required.php' );
+	
 	// General
 	//include_once( ORBIT_DIR . '/lib/functions/general.php' );
 
