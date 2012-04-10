@@ -65,6 +65,7 @@ Feel free to let me know what you think, suggest improvements, fixes, etc
 * Add translations?
 * Create demo for framework/theme to show in use?
 * Add additional framework functionality (tabs, accordions, etc)?
+* Add wiki pages
 
 ## Changelog
 
