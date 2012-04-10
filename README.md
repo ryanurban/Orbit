@@ -57,13 +57,14 @@ Feel free to let me know what you think, suggest improvements, fixes, etc
 
 ## Upcoming
 
-* Think about adding some documentation
-* Think about adding installation instructions
+* Think about adding more specific installation instructions
 * Add more extensive inline documentation
-* Add additional WordPress template files (possibly what's required of a theme to be placed in the WordPress repository)
-* Add microformats as add proper templates
-* Create site for framework to show it in use
+* Add additional WordPress template files (content-gallery.php, author.php, sidebar.php)
+* Create version of Orbit with basic html
+* Add microformats to templates
 * Add translations?
+* Create demo for framework/theme to show in use?
+* Add additional framework functionality (tabs, accordions, etc)?
 
 ## Changelog
 
