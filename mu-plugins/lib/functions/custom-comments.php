@@ -2,7 +2,7 @@
 /**
   * Custom Comments
   *
-  * This file contains functions for customizing the Wordpress comments
+  * This file contains functions for customizing the WordPress comments
   *
   * @package      Core Functionality
   * @since 		  1.0

@@ -24,6 +24,10 @@ function orbit_plugin_setup() {
 	// Required 
 	include_once( ORBIT_DIR . '/lib/functions/required.php' );
 	
+	// Custom Comments
+	// You'll need to uncomment the line below if you're using comments
+	//include_once( ORBIT_DIR . '/lib/functions/custom-comments.php' );
+	
 	// General
 	//include_once( ORBIT_DIR . '/lib/functions/general.php' );
 
@@ -50,9 +54,6 @@ function orbit_plugin_setup() {
 
 	// Post Creation
 	//include_once( ORBIT_DIR . '/lib/functions/post-creation.php' );
-
-	// Custom Comments
-	//include_once( ORBIT_DIR . '/lib/functions/custom-comments.php' );
 
 	// Custom Scripts
 	//include_once( ORBIT_DIR . '/lib/functions/custom-scripts.php' );

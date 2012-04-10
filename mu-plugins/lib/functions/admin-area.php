@@ -2,7 +2,7 @@
 /**
  * Admin Area
  *
- * This file contains functions to customize the Wordpress admin area & back-end
+ * This file contains functions to customize the WordPress admin area & back-end
  *
  * @package      Core Functionality
  * @since 		 1.0
