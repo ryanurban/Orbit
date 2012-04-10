@@ -12,9 +12,6 @@ What follows is a list of plugins I'll typically turn to for my WordPress themes
   This one adds some extra security for your WordPress site.
 * [Login Lockdown](http://wordpress.org/extend/plugins/login-lockdown/)
   Should be pretty self-explanatory. Adds additional security for the WordPress login form.
-  
-## About to start using and recommend
-
 * [WP Super Cache](http://wordpress.org/extend/plugins/wp-super-cache/)
   This plugin generates static html files from your dynamic WordPress blog. After a html file is generated your webserver will serve that file instead of processing the comparatively heavier and more expensive WordPress PHP scripts.
 * [W3 Total Cache](http://wordpress.org/extend/plugins/w3-total-cache/)
@@ -33,7 +30,7 @@ What follows is a list of plugins I'll typically turn to for my WordPress themes
 * [Posts 2 Posts](http://wordpress.org/extend/plugins/posts-to-posts/)
   This is an amazing plugin when you'd like to create relationships between posts, pages, or custom posts and pages. For example, I've used this plugin in the past for shopping area site to relate and show various features and specials to the proper restaurant or shop–freakin awesome!
   
-  *As an aside to all the backup information, I do always try to setup automatic backups for my clients, whether through using a plugin or creating a couple of cron jobs to do the trick (which also allows you to skip utilizing a plugin for that–the less plugins you use the better)*
+  *As an aside to the backup plugins, I do always try to setup automatic backups for my clients, whether through using a plugin or creating a couple of cron jobs to do the trick (which also allows you to skip utilizing a plugin for that–the less plugins you use the better)*
 
 ## My list of recommended premium plugins (and worth every penny)
 
